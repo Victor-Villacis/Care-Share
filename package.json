@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "careshare",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Care share app",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -13,14 +13,17 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "author": "",
+  "author": "Neha Gupta",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "if-env": "^1.0.4"
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mini-create-react-context": "^0.3.2",
+    "react": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   }
 }

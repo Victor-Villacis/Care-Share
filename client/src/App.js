@@ -1,21 +1,33 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav";
+import NoMatch from "./pages/NoMatch";
+import Landing from "./pages/Landing";
+import Contact from "./pages/Contact";
+import News from "./pages/News";
+import SignIn from "./pages/SignIn";
+import Sponsor from "./pages/Sponsor";
+import Team from "./pages/Team";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+function App() {
+  return (
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/team" component={Team} />
+          <Route exact path="/sponsor" component={Sponsor} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/news" component={News} />
+          <Route path="*" component={NoMatch} />
+        </Switch>
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
 export default App;
+
