@@ -8,11 +8,14 @@
   z-index: 99999;
   padding-right: 30px;
   padding-left: 30px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: none !important;
 }
 
 .nav-links a {
-  color: black;
+  color: #333333;
 
-  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
