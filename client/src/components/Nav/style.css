@@ -1,0 +1,18 @@
+#logo {
+  max-height: 100%;
+  display: inline-block;
+}
+
+.nav-logout-view {
+  background-color: white;
+  z-index: 99999;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-links a {
+  color: black;
+
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
