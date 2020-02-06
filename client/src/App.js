@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import News from "./pages/News";
 import SignIn from "./pages/SignIn";
 import Sponsor from "./pages/Sponsor";
-import Team from "./pages/Team";
+import Team from "./pages/Team/Team";
 import "./App.css";
 
 function App() {
@@ -30,4 +30,3 @@ function App() {
 }
 
 export default App;
-
